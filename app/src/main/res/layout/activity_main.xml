@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:text="Genres"
+                android:textSize="34sp"
+                android:textColor="@color/drtwhite"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/RockPlay"
+                android:text="Rock"
+                android:textSize="60sp"
+                android:textColor="@color/drtwhite"
+                android:textStyle="italic|bold"
+                android:shadowColor="@color/grey"
+                android:shadowDx="20"
+                android:shadowDy="20"
+                android:shadowRadius="2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/rockimage"
+                android:onClick="launchRock"
+                app:backgroundTint="@null" />
+            <Button
+                android:id="@+id/PopPlay"
+                android:text="Pop"
+                android:textSize="60sp"
+                android:textColor="@color/drtwhite"
+                android:textStyle="italic|bold"
+                android:shadowColor="@color/grey"
+                android:shadowDx="20"
+                android:shadowDy="20"
+                android:shadowRadius="2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/popimage"
+                android:onClick="onPlayPauseClicked"
+                app:backgroundTint="@null" />
+            <Button
+                android:id="@+id/HipHopPlay"
+                android:text="HipHop"
+                android:textSize="60sp"
+                android:textColor="@color/drtwhite"
+                android:textStyle="italic|bold"
+                android:shadowColor="@color/grey"
+                android:shadowDx="20"
+                android:shadowDy="20"
+                android:shadowRadius="2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/hiphopimage"
+                android:onClick="onPlayPauseClicked"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/DiscoPlay"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/discoimage"
+                android:onClick="onPlayPauseClicked"
+                android:text="Disco"
+                android:textSize="60sp"
+                android:textColor="@color/drtwhite"
+                android:textStyle="italic|bold"
+                android:shadowColor="@color/grey"
+                android:shadowDx="20"
+                android:shadowDy="20"
+                android:shadowRadius="2"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/electronicPlay"
+                android:text="Electronic"
+                android:textSize="60sp"
+                android:textColor="@color/drtwhite"
+                android:textStyle="italic|bold"
+                android:shadowColor="@color/grey"
+                android:shadowDx="20"
+                android:shadowDy="20"
+                android:shadowRadius="2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/electronicimage"
+                android:onClick="onPlayPauseClicked"
+                app:backgroundTint="@null" />
+            <Button
+                android:id="@+id/greekPlay"
+                android:text="Greek"
+                android:textSize="60sp"
+                android:textColor="@color/drtwhite"
+                android:textStyle="italic|bold"
+                android:shadowColor="@color/grey"
+                android:shadowDx="20"
+                android:shadowDy="20"
+                android:shadowRadius="2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/greekimage"
+                android:onClick="onPlayPauseClicked"
+                app:backgroundTint="@null" />
+            <Button
+                android:id="@+id/rnbPlay"
+                android:text="Rnb"
+                android:textSize="60sp"
+                android:textColor="@color/drtwhite"
+                android:textStyle="italic|bold"
+                android:shadowColor="@color/grey"
+                android:shadowDx="20"
+                android:shadowDy="20"
+                android:shadowRadius="2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/rnbimage"
+                android:onClick="onPlayPauseClicked"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
